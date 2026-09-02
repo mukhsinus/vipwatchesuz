@@ -1,0 +1,10 @@
+[build]
+  base = "vipwatches"
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: отдаём index.html для клиентских маршрутов React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
