@@ -308,7 +308,8 @@ p { margin: 0 0 1em; }
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: clamp(28px, 5vw, 48px);
-  padding: clamp(48px, 8vw, 88px) 0;
+  /* только вертикаль — горизонтальные отступы даёт .container */
+  padding-block: clamp(48px, 8vw, 88px);
   min-width: 0;
 }
 .hero-inner > * {
@@ -503,7 +504,8 @@ p { margin: 0 0 1em; }
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 36px 0;
+  /* только вертикаль — горизонтальные отступы даёт .container */
+  padding-block: 36px;
   flex-wrap: wrap;
 }
 .tg-band h2 { margin: 0; font-size: clamp(1.2rem, 2.4vw, 1.6rem); max-width: 32ch; }
@@ -890,7 +892,8 @@ p { margin: 0 0 1em; }
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  padding: 40px 0;
+  /* только вертикаль — горизонтальные отступы даёт .container */
+  padding-block: 40px;
 }
 .footer .logo { color: var(--ivory); }
 .footer-tag {
